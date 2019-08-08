@@ -1,0 +1,109 @@
+
+#mySidenav a {
+  position: absolute; /* Position them relative to the browser window */
+  left: -80px; /* Position them outside of the screen */
+  transition: 0.3s; /* Add transition on hover */
+  padding: 15px; /* 15px padding */
+  width: 100px; /* Set a specific width */
+  text-decoration: none; /* Remove underline */
+  font-size: 20px; /* Increase font size */
+  color: white; /* White text color */
+  border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+}
+
+#mySidenav a:hover {
+  left: 0; /* On mouse-over, make the elements appear as they should */
+}
+
+/* The about link: 20px from the top with a green background */
+#about {
+  top: 20px;
+  background-color: #4CAF50;
+}
+
+#blog {
+  top: 80px;
+  background-color: #2196F3; /* Blue */
+}
+
+.bg-1 { 
+  
+    background-image: linear-gradient(#ffe4e1,#ffffff);
+    color: #474e5d;
+  }
+.bg-2 {     
+    background-image: url('img/img.jpg');
+   color: #2f2f2f;
+   height: 100%;
+  }
+
+.bg-3 { 
+    background-image: url('img/img2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+    background-color: #ffffff;
+    color: #555555;
+  }
+
+.bg-4 { 
+    background-color: #2f2f2f;
+    color: #ffffff;
+  }
+
+.bg-5{
+      opacity: 1;
+      color: black;
+  }
+
+.bg-6{
+    background-color: #EDE9EB;
+    color: #2f2f2f;
+}
+.bg-7{ background-color: #ffffff;
+  color: #555555;}
+
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+p{
+    padding:10px;margin:10px;
+  }
+
+.sgup{
+  border-radius: 25px;
+  border: 2px solid #73AD21;
+  padding: 20px; 
+  width: 70%;
+  height: 100%; 
+}
+
+.panel-wrap {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 30em;
+  transform: translateX(100%);
+  transition: .3s ease-out;
+}
+.panel {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #333;
+  color: #eee;
+  overflow: auto;
+  padding: 1em;
+}
+
+ 
+[type="checkbox"]:checked ~ .panel-wrap {
+  transform: translateX(0%);
+}
+
+*,*:before, *:after {box-sizing: border-box;}
