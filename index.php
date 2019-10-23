@@ -1,5 +1,3 @@
-
-<main><body>
 <?php
 require 'header.php';
     
@@ -118,6 +116,5 @@ echo '</div>
 }
             
 require 'footer.php';
-?> </body>
-</main>
+?>
 
